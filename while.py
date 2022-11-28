@@ -1,7 +1,5 @@
-salida = False
-while not salida:
+while True:
     x = input('Introduce un número: ')
     if x == '2':
-        salida = True
-    else:
-        print(x)
+        break
+    print(x)
