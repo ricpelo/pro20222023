@@ -11,10 +11,9 @@ if len(sys.argv) >= 2:
 else:
     nombre = 'prueba.txt'
 
-f = open(nombre, 'r')
-while True:
-    linea = f.readline().strip()
-    if linea == '':
-        break
-    print(linea)
-f.close()
+with open(nombre, 'r') as f:
+    while True:
+        linea = f.readline().strip()
+        if linea == '':
+            break
+        print(linea)

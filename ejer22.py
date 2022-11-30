@@ -8,10 +8,13 @@ defecto prueba.txt.
 nombre = input('Introduzca el nombre del archivo: ')
 if nombre == '':
     nombre = 'prueba.txt'
-f = open(nombre, 'r')
-while True:
-    linea = f.readline().strip()
-    if linea == '':
-        break
-    print(linea)
-f.close()
+
+try:
+    with open(nombre, 'r') as f:
+        while True:
+            linea = f.readline().strip()
+            if linea == '':
+                break
+            print(linea)
+except FileNotFoundError:
+    print('Archivo no encontrado.')
