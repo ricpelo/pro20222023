@@ -1,27 +1,20 @@
-import sys
+def obtener_numero(prompt):
+    intentos = 0
+    while True:
+        intentos += 1
+        if intentos > 3:
+            print('Me cansé.')
+            raise Exception('Final')
+        try:
+            res = int(input(prompt))
+            break
+        except ValueError:
+            print('El dato introducido no es un número entero.')
+    return res
 
-intentos = 0
-while True:
-    intentos += 1
-    if intentos > 3:
-        print('Me cansé.')
-        sys.exit(1)
-    try:
-        x = int(input('Introduzca el primer número: '))
-        break
-    except ValueError:
-        print('El dato introducido no es un número entero.')
-
-intentos = 0
-while True:
-    intentos += 1
-    if intentos > 3:
-        print('Me cansé.')
-        sys.exit(1)
-    try:
-        y = int(input('Introduzca el segundo número: '))
-        break
-    except ValueError:
-        print('El dato introducido no es un número entero.')
-
-print('El resultado es:', x + y)
+try:
+    x = obtener_numero('Introduzca el primer número: ')
+    y = obtener_numero('Introduzca el segundo número: ')
+    print('El resultado es:', x + y)
+except Exception:
+    print('Ha ocurrido un error.')
