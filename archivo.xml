@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<raiz>
+    <alumno numero="111" matricula="XJ75">
+        <telefono>666555444</telefono>
+        <nombre>
+            <apellidos>García González</apellidos>
+            <propio>Juan</propio>
+        </nombre>
+        <dni>12312312A</dni>
+        <nota>7</nota>
+    </alumno>
+    <alumno numero="222">
+        <dni>44455566B</dni>
+        <nombre>
+            <propio>María</propio>
+            <apellidos>Pérez Rodríguez</apellidos>
+        </nombre>
+        <telefono>696969696</telefono>
+        <nota>9</nota>
+    </alumno>
+    <madre>
+        <dni>22222222C</dni>
+    </madre>
+</raiz>
