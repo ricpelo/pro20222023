@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <club>
     <nombre>Diógenes</nombre>
     <socios>
@@ -6,7 +6,7 @@
             <nombre>Sherlock Holmes</nombre>
             <direccion>221B Baker St</direccion>
             <alta>1890-12-14</alta>
-        </socio>
+        <telefono>666555444</telefono></socio>
         <socio id="51">
             <nombre>Winston Churchill</nombre>
             <direccion>10 Downing St</direccion>
